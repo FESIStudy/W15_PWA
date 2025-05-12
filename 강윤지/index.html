@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon-192.png" />
+    <title>PWA Demo</title>
+  </head>
+  <body>
+    <h1>📱 PWA 예제 웹앱</h1>
+    <p>이 앱은 오프라인에서도 동작합니다!</p>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((reg) =>
+              console.log("✅ Service Worker 등록 완료:", reg.scope)
+            )
+            .catch((err) => console.log("❌ Service Worker 등록 실패:", err));
+        });
+      }
+    </script>
+  </body>
+</html>
