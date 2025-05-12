@@ -442,9 +442,8 @@ self.addEventListener("fetch", (event) => {
 ```
 
 - 실습 결과
-  ![image.png](attachment:72125595-fc4d-41e5-a75e-ddb834e9dd0f:image.png)
+<img width="654" alt="image" src="https://github.com/user-attachments/assets/62cc38ca-c003-4f85-98a4-abf3a3eae9c5" />
 
-![image.png](attachment:a939ea1b-8280-4c69-b764-567880ce5ee5:image.png)
 
 ### 참고
 
